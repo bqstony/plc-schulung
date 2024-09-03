@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{158c46bb-c09e-4b61-ae02-fb8da9009f60}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	stGlobalStatus				: ST_GlobalStatus;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[stGlobalStatus.nDummy := stGlobalStatus.nDummy + 1;
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
